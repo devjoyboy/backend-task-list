@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:3000/tasks
+
+GET {{baseUrl}}
+
+###
+
+GET {{baseUrl}}/3
+
+###
+
+GET {{baseUrl}}/count
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "title": "Teste 4",
+    "description": "Teste 4"
+}
+
+###
+
+DELETE {{baseUrl}}/7
+
+###
+
+PUT {{baseUrl}}/2
+Content-Type: application/json
+
+{
+    "title": "Elaborar currículo Dev",
+    "description": "Eu alterei a descrição"
+}
